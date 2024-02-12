@@ -10,7 +10,7 @@ A3="SDK-Tools"
 ndk_ver="24.0.8215888"
 sdk_link="https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk-aarch64.zip"
 sdk_tool_link="https://github.com/Lzhiyong/android-sdk-tools/releases/download/33.0.3/android-sdk-tools-static-aarch64.zip"
-ndk_link="https://github.com/Lzhiyong/termux-ndk/releases/download/ndk-r24/android-ndk-r24-aarch64.zip"
+ndk_link="https://github.com/lzhiyong/termux-ndk/releases/download/android-ndk/android-ndk-r26b-aarch64.zip"
 logo () {
 var=$(echo $(( ${1} - 2)))
 var2=$(seq -s─ ${var}|tr -d '[:digit:]')
