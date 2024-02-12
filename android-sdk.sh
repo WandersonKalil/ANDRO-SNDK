@@ -162,13 +162,6 @@ else
 (curl --fail --retry 3 --location --output ${PWd}/${A3}.zip "${sdk_tool_link}" --silent) &> /dev/null & progress ${A3}
 fi
 sleep 2
-(sha1sum -c ${PWd}/{x01,x02,x03}) &> /dev/null
-if [[ ! $? == 0  ]]; then
-	echo -e "\e[31mdownload failed..\e[0m"
-	echo -e "Plz run command : \e[4;32mbash android-sdk.sh --install-sdk\e[0m"
-	exit 0
-fi
-}
 sdk_setup () {
 #echo
 (yes | unzip ${PWd}/${A1}.zip -d ${PREFIX}/share
