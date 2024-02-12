@@ -162,6 +162,7 @@ else
 (curl --fail --retry 3 --location --output ${PWd}/${A3}.zip "${sdk_tool_link}" --silent) &> /dev/null & progress ${A3}
 fi
 sleep 2
+}
 sdk_setup () {
 #echo
 (yes | unzip ${PWd}/${A1}.zip -d ${PREFIX}/share
